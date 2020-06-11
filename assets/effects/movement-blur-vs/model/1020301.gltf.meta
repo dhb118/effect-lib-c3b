@@ -1,0 +1,686 @@
+{
+  "ver": "1.3.19",
+  "importer": "gltf",
+  "imported": true,
+  "uuid": "930d0924-f1e9-4b51-9411-a196eed61b50",
+  "files": [],
+  "subMetas": {
+    "d8d86": {
+      "ver": "1.0.9",
+      "importer": "gltf-mesh",
+      "name": "TZ05.mesh",
+      "id": "d8d86",
+      "displayName": "",
+      "uuid": "930d0924-f1e9-4b51-9411-a196eed61b50@d8d86",
+      "imported": true,
+      "files": [
+        ".json",
+        ".bin"
+      ],
+      "subMetas": {},
+      "userData": {
+        "gltfIndex": 0
+      }
+    },
+    "c2696": {
+      "ver": "1.0.13",
+      "importer": "gltf-animation",
+      "name": "Idle.animation",
+      "id": "c2696",
+      "displayName": "",
+      "uuid": "930d0924-f1e9-4b51-9411-a196eed61b50@c2696",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {},
+      "userData": {
+        "gltfIndex": 0,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1
+        },
+        "events": [],
+        "wrapMode": 2
+      }
+    },
+    "130ce": {
+      "ver": "1.0.13",
+      "importer": "gltf-animation",
+      "name": "Dead.animation",
+      "id": "130ce",
+      "displayName": "",
+      "uuid": "930d0924-f1e9-4b51-9411-a196eed61b50@130ce",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {},
+      "userData": {
+        "gltfIndex": 1,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.9166666865348816
+        },
+        "events": [],
+        "wrapMode": 2
+      }
+    },
+    "36bde": {
+      "ver": "1.0.13",
+      "importer": "gltf-animation",
+      "name": "Hitted.animation",
+      "id": "36bde",
+      "displayName": "",
+      "uuid": "930d0924-f1e9-4b51-9411-a196eed61b50@36bde",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {},
+      "userData": {
+        "gltfIndex": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.6666666865348816
+        },
+        "events": [],
+        "wrapMode": 2
+      }
+    },
+    "3d25f": {
+      "ver": "1.0.13",
+      "importer": "gltf-animation",
+      "name": "AttackPrev.animation",
+      "id": "3d25f",
+      "displayName": "",
+      "uuid": "930d0924-f1e9-4b51-9411-a196eed61b50@3d25f",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {},
+      "userData": {
+        "events": [],
+        "gltfIndex": 3,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.5
+        },
+        "speed": 1,
+        "wrapMode": 2
+      }
+    },
+    "d601b": {
+      "ver": "1.0.13",
+      "importer": "gltf-animation",
+      "name": "AttackEnd.animation",
+      "id": "d601b",
+      "displayName": "",
+      "uuid": "930d0924-f1e9-4b51-9411-a196eed61b50@d601b",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {},
+      "userData": {
+        "gltfIndex": 4,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.5
+        },
+        "events": [],
+        "wrapMode": 2
+      }
+    },
+    "2b72c": {
+      "ver": "1.0.13",
+      "importer": "gltf-animation",
+      "name": "LightAttackPrev.animation",
+      "id": "2b72c",
+      "displayName": "",
+      "uuid": "930d0924-f1e9-4b51-9411-a196eed61b50@2b72c",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {},
+      "userData": {
+        "gltfIndex": 5,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.375
+        },
+        "events": [],
+        "wrapMode": 2
+      }
+    },
+    "106ce": {
+      "ver": "1.0.13",
+      "importer": "gltf-animation",
+      "name": "LightAttackEnd.animation",
+      "id": "106ce",
+      "displayName": "",
+      "uuid": "930d0924-f1e9-4b51-9411-a196eed61b50@106ce",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {},
+      "userData": {
+        "gltfIndex": 6,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.4166666567325592
+        },
+        "events": [],
+        "wrapMode": 2
+      }
+    },
+    "b6ff7": {
+      "ver": "1.0.13",
+      "importer": "gltf-animation",
+      "name": "RoundAttackPrev.animation",
+      "id": "b6ff7",
+      "displayName": "",
+      "uuid": "930d0924-f1e9-4b51-9411-a196eed61b50@b6ff7",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {},
+      "userData": {
+        "gltfIndex": 7,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.3333333432674408
+        },
+        "events": [],
+        "wrapMode": 2
+      }
+    },
+    "0907f": {
+      "ver": "1.0.13",
+      "importer": "gltf-animation",
+      "name": "RoundAttackEnd.animation",
+      "id": "0907f",
+      "displayName": "",
+      "uuid": "930d0924-f1e9-4b51-9411-a196eed61b50@0907f",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {},
+      "userData": {
+        "gltfIndex": 8,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.5
+        },
+        "events": [],
+        "wrapMode": 2
+      }
+    },
+    "9292d": {
+      "ver": "1.0.13",
+      "importer": "gltf-animation",
+      "name": "Run.animation",
+      "id": "9292d",
+      "displayName": "",
+      "uuid": "930d0924-f1e9-4b51-9411-a196eed61b50@9292d",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {},
+      "userData": {
+        "gltfIndex": 9,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.6666666865348816
+        },
+        "events": [],
+        "wrapMode": 2
+      }
+    },
+    "6b201": {
+      "ver": "1.0.13",
+      "importer": "gltf-animation",
+      "name": "SickleAttackPrev.animation",
+      "id": "6b201",
+      "displayName": "",
+      "uuid": "930d0924-f1e9-4b51-9411-a196eed61b50@6b201",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {},
+      "userData": {
+        "gltfIndex": 10,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.375
+        },
+        "events": [],
+        "wrapMode": 2
+      }
+    },
+    "c0a1b": {
+      "ver": "1.0.13",
+      "importer": "gltf-animation",
+      "name": "SickleAttackEnd.animation",
+      "id": "c0a1b",
+      "displayName": "",
+      "uuid": "930d0924-f1e9-4b51-9411-a196eed61b50@c0a1b",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {},
+      "userData": {
+        "gltfIndex": 11,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.4166666567325592
+        },
+        "events": [],
+        "wrapMode": 2
+      }
+    },
+    "762fb": {
+      "ver": "1.0.13",
+      "importer": "gltf-animation",
+      "name": "LightIdle.animation",
+      "id": "762fb",
+      "displayName": "",
+      "uuid": "930d0924-f1e9-4b51-9411-a196eed61b50@762fb",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {},
+      "userData": {
+        "gltfIndex": 12,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1
+        },
+        "events": [],
+        "wrapMode": 2
+      }
+    },
+    "8f79a": {
+      "ver": "1.0.13",
+      "importer": "gltf-animation",
+      "name": "RoundIdle.animation",
+      "id": "8f79a",
+      "displayName": "",
+      "uuid": "930d0924-f1e9-4b51-9411-a196eed61b50@8f79a",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {},
+      "userData": {
+        "gltfIndex": 13,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1
+        },
+        "events": [],
+        "wrapMode": 2
+      }
+    },
+    "c5a13": {
+      "ver": "1.0.13",
+      "importer": "gltf-animation",
+      "name": "SickleIdle.animation",
+      "id": "c5a13",
+      "displayName": "",
+      "uuid": "930d0924-f1e9-4b51-9411-a196eed61b50@c5a13",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {},
+      "userData": {
+        "gltfIndex": 14,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1
+        },
+        "events": [],
+        "wrapMode": 2
+      }
+    },
+    "438fe": {
+      "ver": "1.0.1",
+      "importer": "gltf-skeleton",
+      "name": "UnnamedSkeleton.skeleton",
+      "id": "438fe",
+      "displayName": "",
+      "uuid": "930d0924-f1e9-4b51-9411-a196eed61b50@438fe",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {},
+      "userData": {
+        "gltfIndex": 0,
+        "jointsLength": 32
+      }
+    },
+    "0f0a9": {
+      "ver": "1.0.19",
+      "importer": "texture",
+      "name": "TZ05_01_D.texture",
+      "id": "0f0a9",
+      "displayName": "",
+      "uuid": "930d0924-f1e9-4b51-9411-a196eed61b50@0f0a9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {},
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "premultiplyAlpha": false,
+        "anisotropy": 1,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/effects/movement-blur-vs/model/TZ05_01_D.png"
+      }
+    },
+    "8b782": {
+      "ver": "1.0.14",
+      "importer": "gltf-material",
+      "name": "cloth.material",
+      "id": "8b782",
+      "displayName": "",
+      "uuid": "930d0924-f1e9-4b51-9411-a196eed61b50@8b782",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {},
+      "userData": {
+        "gltfIndex": 0
+      }
+    },
+    "733b7": {
+      "ver": "1.0.11",
+      "importer": "gltf-scene",
+      "name": "1020301.prefab",
+      "id": "733b7",
+      "displayName": "",
+      "uuid": "930d0924-f1e9-4b51-9411-a196eed61b50@733b7",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {},
+      "userData": {
+        "gltfIndex": 0
+      }
+    }
+  },
+  "userData": {
+    "normals": 2,
+    "tangents": 2,
+    "dumpMaterials": false,
+    "animationImportSettings": [
+      {
+        "name": "Idle",
+        "duration": 1,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Idle",
+            "from": 0,
+            "to": 1,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "Dead",
+        "duration": 0.9166666865348816,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Dead",
+            "from": 0,
+            "to": 0.9166666865348816,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "Hitted",
+        "duration": 0.6666666865348816,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Hitted",
+            "from": 0,
+            "to": 0.6666666865348816,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "AttackPrev",
+        "duration": 0.5,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "AttackPrev",
+            "from": 0,
+            "to": 0.5,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "AttackEnd",
+        "duration": 0.5,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "AttackEnd",
+            "from": 0,
+            "to": 0.5,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "LightAttackPrev",
+        "duration": 0.375,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "LightAttackPrev",
+            "from": 0,
+            "to": 0.375,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "LightAttackEnd",
+        "duration": 0.4166666567325592,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "LightAttackEnd",
+            "from": 0,
+            "to": 0.4166666567325592,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "RoundAttackPrev",
+        "duration": 0.3333333432674408,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "RoundAttackPrev",
+            "from": 0,
+            "to": 0.3333333432674408,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "RoundAttackEnd",
+        "duration": 0.5,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "RoundAttackEnd",
+            "from": 0,
+            "to": 0.5,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "Run",
+        "duration": 0.6666666865348816,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Run",
+            "from": 0,
+            "to": 0.6666666865348816,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "SickleAttackPrev",
+        "duration": 0.375,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "SickleAttackPrev",
+            "from": 0,
+            "to": 0.375,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "SickleAttackEnd",
+        "duration": 0.4166666567325592,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "SickleAttackEnd",
+            "from": 0,
+            "to": 0.4166666567325592,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "LightIdle",
+        "duration": 1,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "LightIdle",
+            "from": 0,
+            "to": 1,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "RoundIdle",
+        "duration": 1,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "RoundIdle",
+            "from": 0,
+            "to": 1,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "SickleIdle",
+        "duration": 1,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "SickleIdle",
+            "from": 0,
+            "to": 1,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "930d0924-f1e9-4b51-9411-a196eed61b50@733b7",
+    "assetFinder": {
+      "meshes": [
+        "930d0924-f1e9-4b51-9411-a196eed61b50@d8d86"
+      ],
+      "skeletons": [
+        "930d0924-f1e9-4b51-9411-a196eed61b50@438fe"
+      ],
+      "textures": [
+        "930d0924-f1e9-4b51-9411-a196eed61b50@0f0a9"
+      ],
+      "materials": [
+        "930d0924-f1e9-4b51-9411-a196eed61b50@8b782"
+      ],
+      "scenes": [
+        "930d0924-f1e9-4b51-9411-a196eed61b50@733b7"
+      ]
+    },
+    "imageMetas": [
+      {
+        "name": "TZ05_01_D.png",
+        "uri": "db://assets/effects/movement-blur-vs/model/TZ05_01_D.png"
+      }
+    ]
+  }
+}

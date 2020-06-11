@@ -1,0 +1,13 @@
+{
+  "ver": "1.0.10",
+  "importer": "animation-clip",
+  "imported": true,
+  "uuid": "2929cae7-490e-427b-9cad-6fa3001b96c0",
+  "files": [
+    ".json"
+  ],
+  "subMetas": {},
+  "userData": {
+    "name": "movement-blur"
+  }
+}

@@ -1,0 +1,140 @@
+// Effect Syntax Guide: https://github.com/cocos-creator/docs-3d/blob/master/zh/material-system/effect-syntax.md
+
+CCEffect %{
+  techniques:
+  - name: opaque
+    passes:
+    - vert: movement-vs:vert
+      frag: movement-fs:frag
+      properties: &props
+        mainTexture:    { value: grey }
+        tilingOffset:   { value: [1, 1, 0, 0] }
+        mainColor:      { value: [1, 1, 1, 1], editor: { type: color } }
+        colorScale:     { value: [1, 1, 1], target: colorScaleAndCutoff.xyz }
+        alphaThreshold: { value: 0.5, target: colorScaleAndCutoff.w, editor: { parent: USE_ALPHA_TEST } }
+        color:          { target: mainColor, editor: { visible: false } } # backward compability
+      migrations: &migs
+        properties:
+          mainColor:    { formerlySerializedAs: color }
+  - name: transparent
+    passes:
+    - vert: movement-vs:vert
+      frag: movement-fs:frag
+      depthStencilState: &d1
+        depthTest: true
+        depthWrite: false
+      blendState:
+        targets:
+        - blend: true
+          blendSrc: src_alpha
+          blendDst: one_minus_src_alpha
+          blendDstAlpha: one_minus_src_alpha
+      properties: *props
+      migrations: *migs
+}%
+
+CCProgram movement-vs %{
+precision mediump float;
+  #include <cc-global>
+  #include <cc-local-batch>
+  #include <input-standard>
+
+  uniform ConstantVS {
+    vec4 moveDir;
+  };
+
+  #if USE_VERTEX_COLOR
+    in vec4 a_color;
+    out vec4 v_color;
+  #endif
+
+  #if USE_TEXTURE
+    in vec2 a_texCoord;
+    out vec2 v_uv;
+    uniform TexCoords {
+      vec4 tilingOffset;
+    };
+  #endif
+
+  out float v_NdotD;
+
+  vec4 vert () {
+
+    StandardVertInput In;
+    CCVertInput(In);
+
+    mat4 matWorld;
+    CCGetWorldMatrix(matWorld);
+
+    #if USE_TEXTURE
+      v_uv = a_texCoord;
+      #if FLIP_UV
+        v_uv.y = 1.0 - v_uv.y;
+      #endif
+      v_uv = v_uv * tilingOffset.xy + tilingOffset.zw;
+    #endif
+
+    #if USE_VERTEX_COLOR
+      v_color = a_color;
+    #endif
+
+    vec4 wPos = matWorld * In.position;
+    vec3 wNormal = normalize((matWorld * vec4(In.normal, 0.0)).xyz);
+    
+    float NdotD = max(0.0,dot(wNormal,vec3(moveDir.xyz)));
+    v_NdotD = NdotD;
+
+    #if USE_TEXTURE
+      float noise = 10.0;
+      wPos.xyz += moveDir.xyz * moveDir.w * noise * NdotD;
+    #endif
+    return cc_matProj * (cc_matView ) * wPos;
+  }
+}%
+
+CCProgram movement-fs %{
+  precision mediump float;
+  #include <output>
+
+  #if USE_ALPHA_TEST
+    #pragma define ALPHA_TEST_CHANNEL options([a, r, g, b])
+  #endif
+
+  #if USE_TEXTURE
+    in vec2 v_uv;
+    uniform sampler2D mainTexture;
+  #endif
+
+  #if USE_VERTEX_COLOR
+    in vec4 v_color;
+  #endif
+
+  in float v_NdotD;
+
+  uniform Constant {
+    vec4 mainColor;
+    vec4 colorScaleAndCutoff;
+  };
+
+  vec4 frag () {
+
+    vec4 o = mainColor;
+    o.rgb *= colorScaleAndCutoff.xyz;
+
+  #if USE_VERTEX_COLOR
+    o *= v_color;
+  #endif
+
+  #if USE_TEXTURE
+    o *= texture(mainTexture, v_uv);
+  #endif
+
+    #if USE_ALPHA_TEST
+      if (o.ALPHA_TEST_CHANNEL < colorScaleAndCutoff.w) discard;
+    #endif
+
+    o += v_NdotD * mainColor;
+
+    return CCFragOutput(o);
+  }
+}%
