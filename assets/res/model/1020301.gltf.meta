@@ -421,7 +421,7 @@
         "premultiplyAlpha": false,
         "anisotropy": 1,
         "isUuid": false,
-        "imageUuidOrDatabaseUri": "db://assets/effects/movement-blur-vs/model/TZ05_01_D.png"
+        "imageUuidOrDatabaseUri": "db://assets/res/model/TZ05_01_D.png"
       }
     },
     "8b782": {
@@ -679,7 +679,7 @@
     "imageMetas": [
       {
         "name": "TZ05_01_D.png",
-        "uri": "db://assets/effects/movement-blur-vs/model/TZ05_01_D.png"
+        "uri": "db://assets/res/model/TZ05_01_D.png"
       }
     ]
   }
