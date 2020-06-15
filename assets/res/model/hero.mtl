@@ -4,18 +4,12 @@
   "_objFlags": 0,
   "_native": "",
   "_effectAsset": {
-    "__uuid__": "a7612b54-35e3-4238-a1a9-4a7b54635839"
+    "__uuid__": "a3cd009f-0ab0-420d-9278-b9fdab939bbc"
   },
   "_techIdx": 0,
   "_defines": [
     {
-      "USE_OUTLINE_PASS": true,
-      "USE_BASE_COLOR_MAP": true
-    },
-    {
-      "USE_BASE_COLOR_MAP": true,
-      "BASE_COLOR_MAP_AS_SHADE_MAP_1": true,
-      "BASE_COLOR_MAP_AS_SHADE_MAP_2": true
+      "USE_TEXTURE": true
     }
   ],
   "_states": [
@@ -27,30 +21,9 @@
       },
       "depthStencilState": {},
       "rasterizerState": {}
-    },
-    {
-      "blendState": {
-        "targets": [
-          {}
-        ]
-      },
-      "depthStencilState": {},
-      "rasterizerState": {}
     }
   ],
   "_props": [
-    {
-      "baseColor": {
-        "__type__": "cc.Color",
-        "r": 255,
-        "g": 0,
-        "b": 0,
-        "a": 255
-      },
-      "baseColorMap": {
-        "__uuid__": "5378b437-4ef7-4a53-b6c8-7d8335027b0d@6c48a"
-      }
-    },
     {
       "mainTexture": {
         "__uuid__": "5378b437-4ef7-4a53-b6c8-7d8335027b0d@6c48a"

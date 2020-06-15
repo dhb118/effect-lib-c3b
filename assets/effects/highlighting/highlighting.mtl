@@ -38,7 +38,7 @@
   "_props": [
     {},
     {
-      "lineWidth": 100,
+      "lineWidth": 50,
       "baseColor": {
         "__type__": "cc.Color",
         "r": 31,
